@@ -18,6 +18,6 @@ jobs:
       with:
         image: Apachy999/go-web/go-site-image
         registry: ghcr.io
-        githubOrg: override-org # optional
+   #     githubOrg: override-org # optional
         username: Apachy999
         password: ${{ secrets.docker-pull-io }}
