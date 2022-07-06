@@ -19,5 +19,5 @@ jobs:
         image: go-web/go-site-image
         registry: ghcr.io
    #     githubOrg: override-org # optional
-        username: Apachy999
-        password: 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
+        username: ${{ github.actor }
+        password: ${{ secrets.GHCR_TOKEN }}
