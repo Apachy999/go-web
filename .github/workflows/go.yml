@@ -19,5 +19,5 @@ jobs:
         image: go-web/go-site-image
         registry: ghcr.io
    #     githubOrg: override-org # optional
-        username: ${{ github.actor }}
+        username: ${{ github.login }}
         password: ${{ secrets.GHCR_TOKEN }}
