@@ -1,0 +1,23 @@
+name: Go
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Build and push docker image  
+      uses: mr-smithers-excellent/docker-build-push@v5
+      with:
+        image: Apachy999/go-web/go-site-image
+        registry: ghcr.io
+        githubOrg: override-org # optional
+        username: Apachy999
+        password: ${{ secrets.docker-pull-io }
