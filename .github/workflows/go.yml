@@ -20,4 +20,4 @@ jobs:
         registry: ghcr.io
    #     githubOrg: override-org # optional
         username: Apachy999
-        password: ${{ secrets.docker-pull-io }}
+        password: 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
