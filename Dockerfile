@@ -15,7 +15,7 @@ ENV APP_HOME /go/src/go-web
 RUN mkdir -p "$APP_HOME"
 WORKDIR "$APP_HOME"
 
-COPY src/static/ static/
+COPY src/conf/ conf/
 COPY src/views/ views/
 COPY --from=builder "$APP_HOME"/go-web $APP_HOME
 
